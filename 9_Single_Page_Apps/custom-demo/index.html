@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/site.css">
+  <link rel="stylesheet" href="static/recipe.css">
+  <link rel="stylesheet" href="static/form.css">
+
+  <script src="./app.js" type="module"></script>
+  <title>Single page</title>
+</head>
+
+<body>
+  <header>
+    <h1>My Cookbook</h1>
+    <nav>
+      <div id="user">
+        <a id="createButton" href="/create">Create Recipe</a>
+        <a id="logoutBtn" href="/logout">Logout</a>
+      </div>
+      <div id="guest">
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="login" class="hide">
+      <h2>Login</h2>
+      <form>
+        <label>E-mail: <input type="text" name="email"></label>
+        <label>Password: <input type="password" name="password"></label>
+        <input type="submit" value="Login">
+      </form>
+    </section>
+
+    <section id="create" class="hide">
+      <h2>New Recipe</h2>
+      <form>
+        <label>Name: <input type="text" name="name" placeholder="Recipe name"></label>
+        <label>Image: <input type="text" name="img" placeholder="Image URL"></label>
+        <label class="ml">Ingredients: <textarea name="ingredients"
+            placeholder="Enter ingredients on separate lines"></textarea></label>
+        <label class="ml">Preparation: <textarea name="steps"
+            placeholder="Enter preparation steps on separate lines"></textarea></label>
+        <input type="submit" value="Create Recipe">
+      </form>
+    </section>
+
+    <section id="register" class="hide">
+      <h2>Register</h2>
+      <form>
+        <label>E-mail: <input type="text" name="email"></label>
+        <label>Password: <input type="password" name="password"></label>
+        <label>Repeat: <input type="password" name="rePass"></label>
+        <input type="submit" value="Register">
+      </form>
+    </section>
+
+    <section id="logout" class="hide">
+      <h2>Good bye</h2>
+    </section>
+  </main>
+</body>
+
+</html>
