@@ -1,0 +1,20 @@
+.section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.heading {
+  margin: 12px;
+}
+
+.login-container {
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container form {
+  width: 400px;
+}
